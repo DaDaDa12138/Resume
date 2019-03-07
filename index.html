@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/common.css">
+<link rel="stylesheet" type="text/css" media="only screen and (min-width : 768px) and (max-width: 939px)" href="assets/css/layout.768.css">
+<link rel="stylesheet" type="text/css" media="only screen and (min-width : 501px) and (max-width : 767px)" href="assets/css/layout.640.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-width : 500px)" href="assets/css/layout.480.css">
+
+
+
+<title>About Me - ZhenYu</title>
+
+</head>
+<body>
+<div id="wrap">
+	<!-- [s] Header -->
+	<div id="header">
+		<div id="header-logo"><a href="#">ABOUT ME</a></div>
+		<div class="navi-wrapper">
+			<ul class="inline">
+				<li><a href="#" class="active">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+				<li><a href="work.html">PROJECT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- [e] Header //-->
+
+	<!-- Front Image -->
+	<div id="front-image-wrapper"><img src="https://zhenyu.red/wp-content/uploads/2017/11/pic_1.jpg" alt="front"></div>
+	<div id="content">
+
+		<!-- [s] Main Content -->
+		<div id="content-inner-wrapper">
+         
+			<!-- Page Title -->
+			<h1 class="page-title">Hi, Welcome. I'm ZhenYu</h1>
+			<div class="center-content-wrapper">
+				<p>Now currently Working on Raspberry Pi Project</p>
+			</div>
+			
+			<!-- [s] Main Content -->
+			<div id="main-content-wrapper">
+				<p class="text-center"><a class="red" href="about.html">see more about me</a></p>
+				<p class="text-center"><a class="red" href="resume.html">see my resume</a></p>
+				<p class="text-center"><a class="red" href="work.html">see my lastest works</a></p>
+				<p class="text-center"><a class="red" href="contact.html">contact me</a></p>
+			</div>
+			<!-- [e] Main Content //-->
+		</div>
+		<!-- [e] Main Content //-->
+
+		<!-- [s] Footer -->
+		<div id="footer">
+			<p class="pull-right">&copy; 2017 ZhenYu</p>
+			<p>
+				<a href="https://zhenyu.red/" class="social-wordpress"></a>
+				<a href="https://github.com/DaDaDa12138" class="social-github"></a>
+				<a href="mailto:nick@zhenyu.red" class="social-email"></a>
+			</p>
+		</div>
+		<!-- [e] Footer //-->
+	</div>
+</div>
+
+<!-- [s] Scripts -->
+<script>
+	$(document).ready(function(){
+		var rand = Math.floor((Math.random()*2)+1);
+		if (rand == 2)
+			rand = 5;
+		var src = 'assets/img/pic_' + rand + '.jpg';
+		$('#front-image-wrapper>img').attr('src',src);
+	})
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<script type="text/javascript" src="assets/js/respond.min.js"></script>
+
+</body>
+</html>
